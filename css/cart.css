@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 *{ margin: 0; padding: 0; font-family: Gotham, Arial, "sans-serif"; font-size: 14px; color: #345}
-.cartWrap{ width:90vw; margin: 0 auto;background: #fff; box-sizing: border-box; box-shadow: 1px 1px 5px #ddd; min-height: 100vh }
+.cartWrap{ width:90vw; margin: 0 auto;background: #fff; box-sizing: border-box; box-shadow: 1px 1px 5px #ddd; min-height: calc( 100vh - 50px) }
 .fullRow{ width: calc(100% - 20px); margin: 5px 0; padding: 5px 10px; clear: both;  box-sizing: border-box;}		
 .leftSide{ width: 70%; display: inline-block;  box-sizing: border-box; min-height: calc(100vh - 150px); float: left; border-right: 1px solid #ddd}	
 .rightSide{ width: 30%; display: inline-block;  box-sizing: border-box; min-height: calc(100vh - 150px); float: left}
@@ -24,33 +24,27 @@
 .totalCost{ margin: 15px 0 0 0; border-top: 2px double #ddd; padding-top: 10px;; font-size: 1.5rem; float: left; width: 100%}
 #total-cart, .cartDetails{ font-size: 1.5rem; font-weight: bold}
 .cartDetails{ color: #6ac759; padding-bottom: 5px; border-bottom: 1px solid #ddd; margin-bottom: 10px}
+footer{ height: 50px; width: 90vw; margin: 0 auto; background: #ddd}
+footer p { padding:15px; font-size: 1rem; }
+footer p a{ color:#56839F; text-decoration: none; outline: none}
 
-/* Small devices (landscape phones, 576px and down)*/
+
 @media only screen and (max-width: 576px) {
 
 }
-
-/* Medium devices (tablets, 768px and down)*/
 @media only screen and (max-width: 768px) {
 	.leftSide, .rightSide, .col{ width: 100%;  box-sizing: border-box; margin: 10px 0 }
 	.fullRow{ margin: 0 auto}
 	.leftSide{ border: none}
 		}
-
-/* Large devices (desktops, 992px and down)*/
 @media only screen and (max-width: 992px) {
     .cartWrap{width:100%; margin: 0 auto;}
 	.fullRow{ width: calc(100% - 20px); }
 	
 }
 
-/* X-Large devices (large desktops, 1200px and down)*/
 @media only screen and (max-width: 1200px) {
-
-}
-
-/* XX-Large devices (larger desktops, 1400px and down)*/
-@media only screen and (max-width: 1400px) { 
-
+.cartWrap{ width:90vw;}
+footer{ width: 90vw;}
 }
 
