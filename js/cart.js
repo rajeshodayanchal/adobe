@@ -1,6 +1,6 @@
 // JavaScript Document
 	$(document).ready(function(){
-let myObj, i, j, x = "";
+let myObj = "";
 let names = Array();
 let images = Array();
 let actualPrice = Array();
